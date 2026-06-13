@@ -109,6 +109,26 @@ npm install
 npm run dev
 ```
 
+## Screenshots
+
+### Dashboard Overview
+![Dashboard](screenshots/dashboard-overview.png)
+
+### Ticket Management
+![Tickets](screenshots/ticket-management.png)
+
+### Search & Filter
+![Search](screenshots/search-filter.png)
+
+### Ticket Details
+![Details](screenshots/ticket-details-modal.png)
+
+### Create Ticket
+![Create](screenshots/create-ticket-form.png)
+
+### API Documentation
+![Swagger](screenshots/api-documentation.png)
+
 ## Author
 
 Suraj Lashkare
