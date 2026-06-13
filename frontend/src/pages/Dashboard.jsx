@@ -60,7 +60,7 @@ const [ticketToDelete, setTicketToDelete] =
       setSubject("");
       setDescription("");
 
-      fetchTickets();
+      await fetchTickets();
     } catch (error) {
       console.error(error);
     }
@@ -69,10 +69,10 @@ const [ticketToDelete, setTicketToDelete] =
   const updateStatus = async (ticketId, newStatus) => {
     try {
       await API.put(`/api/tickets/${ticketId}`, {
-        status: newStatus,
-      });
+  status: newStatus,
+});
 
-      fetchTickets();
+await fetchTickets();
     } catch (error) {
       console.error(error);
     }
@@ -86,10 +86,10 @@ const [ticketToDelete, setTicketToDelete] =
 const confirmDeleteTicket = async () => {
   try {
     await API.delete(
-      `/api/tickets/${ticketToDelete}`
-    );
+  `/api/tickets/${ticketToDelete}`
+);
 
-    fetchTickets();
+await fetchTickets();
 
     setShowDeleteModal(false);
     setTicketToDelete(null);
